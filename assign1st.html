@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Asseert 1st Task</title>
+</head>
+<style>
+  *
+  {
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+  }
+    .col1
+    {
+        font-size: 22px;
+        padding-top: 10px;
+        position: fixed;
+        background-color: white;
+        box-shadow: 1px 1px 2px gray;
+        height: 100%;
+    }
+    .col1 p{
+      padding: 15px 5px;
+    }
+    .col1 a{
+        text-decoration: none;
+        color: #818181;
+    }
+    .col1 a:hover
+    {
+      color: black;
+    }
+    .row
+    {
+        padding: 15px ;
+        margin-left: 200px;
+        margin-top: 0px;
+        font-size: 25px;
+        
+    }
+
+    .row1
+    {
+      padding-top: 10px;
+      margin-left: 180px;
+      padding-bottom: 45px;
+      background-color:rgb(216, 252, 216);
+      padding-left: 30px;
+    }
+    .row1 a
+    {
+     text-decoration: none;
+    }
+    h1{
+     color: blue;
+    }
+    .select
+    {
+      padding: 5px 0px ; 
+      width:320px ;
+      height: 45px ;
+      margin-left: 30px;
+      border : 0px;
+    }
+    .select2
+    {
+      padding: 5px 0px ;
+      width:320px ;
+      height: 45px ;
+      border : 0px;
+    }
+    .select3
+    {
+      padding: 5px 0px ; width:305px ;
+      margin-top: 20px;
+      width:320px ;
+      height: 45px ;
+      border : 0px;
+    }
+    .btn1
+    {
+      border: 0px;
+      color:white;
+      background-color: blue;
+      margin-top: 20px;
+      margin-left: 130px;
+      padding: 10px 90px ;
+      border-radius: 4px;
+    }
+    .btn2
+    {
+      border: 0px;
+      color:white;
+      background-color: red;
+      margin-left: 140px;
+      margin-top: 20px;
+      padding: 10px 100px ;
+      border-radius: 4px;
+    }
+    .header
+    {
+      font-size: 20px;
+      margin-left: 820px;
+    }
+    .headericon
+    {
+      vertical-align: middle;
+      margin-left: 20px;
+      width: 40px;
+      height: 30px;
+    }
+    .headertext
+    {
+      font-size: 20px;
+    }
+    .viewclient
+    {
+    
+      padding: 12px 15px;
+      margin-left: 950px;
+      background-color: rgb(179, 245, 173);
+      border: 2px solid green;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .logout
+    {
+      padding: 10px 50px 10px 10px;
+      background-color:rgb(216, 252, 216);
+      margin-top: 107px;
+    }
+    .extra
+    {
+      padding: 0px ;
+      background-color:rgb(216, 252, 216);
+      border-left: 4px solid blue;
+      margin-right: 0px ;
+    }
+</style>
+<body>
+   <div class="col1">
+      <img  src="full.jpg"  width="150px" height="130px" >
+      <p><a href="#dashboard"><i class="fa fa-university" aria-hidden="true"></i> Dashboard</a></p>
+      <p class="extra"><a href="#Client"><i class="fa fa-users" aria-hidden="true"></i> Client Details </a></p>
+      <p ><a href="Enquiry"><i class="fa fa-id-card-o" aria-hidden="true"></i> Enquiry</a></p>
+      <p><a href="Calendar"><i class="fa fa-calendar" aria-hidden="true"></i> Work Calendar</a></p>
+      <p><a href="Notification"><i class="fa fa-bell-o" aria-hidden="true"></i> Notification</a></p>
+      <p><a href="Profile"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></p>
+      <p class="logout"><i class="fa fa-sign-out" ></i><span>Logout</span></p>
+    </div>
+    <div class="row">
+    <a href="#menu"><i class="fa fa-bars"  aria-hidden="true"></i></a>
+    <a class="header" herf="#bell"><i class="fa fa-bell-o" aria-hidden="true"></i> </a><span class="headertext">Welcome Back</span><span><img class="headericon"src="person.png"><i style="font-size: 15px; margin-left: 10px;" class="fa fa-chevron-down" aria-hidden="true"></i></span>
+    </div>
+    <div class="row1">
+      <h1>Add New Client <button class="viewclient">View Client <i style="padding-left: 8px;" class="fa fa-eye" aria-hidden="true"></i></button></h1>
+      <p style="margin-top: -20px;">Marketing & Sales</p>
+      <p style="padding-top: 10px;">Home <span><a href="">< Add New Client </a></Add></span></p>
+      <h3 style="padding-top: 10px;">Personal Information</h3>
+      <input  style="padding: 5px 0px  ; width:320px ;height: 30px ;border : 0px; margin-top: 20px;" type="text" placeholder="Client Name" required >
+      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Phone Number" required >
+      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Client Name" required >
+      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px; margin-top: 20px;" type="text" placeholder="Address" required >
+      <select class="select"name="Country" >
+        <option >Select Country</option>
+        <option >India</option>
+        <option >USA</option>
+        <option >Pakistan</option>
+      </select>
+      <select class="select"name="State" >
+        <option >Select State</option>
+        <option >Uttar Pradesh</option>
+        <option >Lakhnow</option>
+        <option >Bihar</option>
+      </select>
+      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px; margin-top: 20px;" type="text" placeholder="Select City" required >
+      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Pincode" required >
+      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px; margin-left: 30px;" type="text" placeholder="Contact Number" required >
+      <h3 style="margin: 10px 0px;">Enquiry Details</h3>
+      <select class="select2"name="Enquiry" >
+        <option >Type Enquiry</option>
+        <option >Company</option>
+        <option >Employ</option>
+        <option >Personal</option>
+      </select>
+      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Enquiry Details" required >
+      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px; margin-left: 30px;" type="date" placeholder="Date" required >
+      <select class="select3"name="Enquiry" >
+        <option >Enquiry Status</option>
+        <option >Company</option>
+        <option >Employ</option>
+        <option >Personal</option>
+      </select>
+      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Phone Number" required >
+      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px; margin-left: 30px;" type="text" placeholder="Enquiry Status" required >
+     
+      <button class="btn1">Add New Client</button>
+      <button class="btn2">Cancel</button>
+    </div>
+  </body>
+</html>
