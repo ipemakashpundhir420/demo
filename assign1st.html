@@ -9,21 +9,22 @@
 <style>
   *
   {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
   }
     .col1
     {
-        font-size: 22px;
+        font-size: 14px;
         padding-top: 10px;
+        width: 180px;
         position: fixed;
         background-color: white;
         box-shadow: 1px 1px 2px gray;
         height: 100%;
     }
     .col1 p{
-      padding: 15px 5px;
+      padding: 10px 5px;
     }
     .col1 a{
         text-decoration: none;
@@ -31,7 +32,12 @@
     }
     .col1 a:hover
     {
-      color: black;
+      color: rgb(14, 12, 12);
+    }
+    .col1 i
+    {
+      padding: 10px;
+      font-size: 20px;
     }
     .row
     {
@@ -47,7 +53,7 @@
       padding-top: 10px;
       margin-left: 180px;
       padding-bottom: 45px;
-      background-color:rgb(216, 252, 216);
+      background-color:#f5fafa;
       padding-left: 30px;
     }
     .row1 a
@@ -59,22 +65,24 @@
     }
     .select
     {
-      padding: 5px 0px ; 
+      padding-left: 10px;
+     
       width:320px ;
       height: 45px ;
-      margin-left: 30px;
+      margin-left: 35px;
       border : 0px;
     }
     .select2
     {
-      padding: 5px 0px ;
+      padding-left: 10px;
+     
       width:320px ;
       height: 45px ;
       border : 0px;
     }
     .select3
     {
-      padding: 5px 0px ; width:305px ;
+      padding-left: 10px; width:305px ;
       margin-top: 20px;
       width:320px ;
       height: 45px ;
@@ -84,7 +92,7 @@
     {
       border: 0px;
       color:white;
-      background-color: blue;
+      background-color: rgb(68, 116, 219);
       margin-top: 20px;
       margin-left: 130px;
       padding: 10px 90px ;
@@ -94,7 +102,7 @@
     {
       border: 0px;
       color:white;
-      background-color: red;
+      background-color: rgb(245, 41, 14);
       margin-left: 140px;
       margin-top: 20px;
       padding: 10px 100px ;
@@ -119,30 +127,30 @@
     .viewclient
     {
     
-      padding: 12px 15px;
+      padding: 11px 18px;
       margin-left: 950px;
-      background-color: rgb(179, 245, 173);
-      border: 2px solid green;
+      background-color: #eafae3;
+      border: 1px solid rgb(96, 243, 96);
       border-radius: 4px;
       font-weight: bold;
     }
     .logout
     {
       padding: 10px 50px 10px 10px;
-      background-color:rgb(216, 252, 216);
-      margin-top: 107px;
+      background-color:#f5fafa ;
+      margin-top: 150px;
     }
     .extra
     {
       padding: 0px ;
-      background-color:rgb(216, 252, 216);
+      background-color:#f5fafa;
       border-left: 4px solid blue;
       margin-right: 0px ;
     }
 </style>
 <body>
    <div class="col1">
-      <img  src="full.jpg"  width="150px" height="130px" >
+      <img  src="full.jpg"  style="margin-left: 30px" width="100px" height="60px" >
       <p><a href="#dashboard"><i class="fa fa-university" aria-hidden="true"></i> Dashboard</a></p>
       <p class="extra"><a href="#Client"><i class="fa fa-users" aria-hidden="true"></i> Client Details </a></p>
       <p ><a href="Enquiry"><i class="fa fa-id-card-o" aria-hidden="true"></i> Enquiry</a></p>
@@ -159,11 +167,11 @@
       <h1>Add New Client <button class="viewclient">View Client <i style="padding-left: 8px;" class="fa fa-eye" aria-hidden="true"></i></button></h1>
       <p style="margin-top: -20px;">Marketing & Sales</p>
       <p style="padding-top: 10px;">Home <span><a href="">< Add New Client </a></Add></span></p>
-      <h3 style="padding-top: 10px;">Personal Information</h3>
-      <input  style="padding: 5px 0px  ; width:320px ;height: 30px ;border : 0px; margin-top: 20px;" type="text" placeholder="Client Name" required >
-      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Phone Number" required >
-      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Client Name" required >
-      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px; margin-top: 20px;" type="text" placeholder="Address" required >
+      <h3 style="padding-top: 10px; ">Personal Information</h3>
+      <input  style="padding: 5px 0px;padding-left: 10px; width:315px ;height: 30px ;border : 0px; margin-top: 20px;" type="text" placeholder="Client Name" required >
+      <input style="padding: 5px 0px ;padding-left: 10px; width:315px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Phone Number" required >
+      <input style="padding: 5px 0px ;padding-left: 10px; width:310px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Client Name" required >
+      <input style="padding: 5px 0px ;padding-left: 10px; width:315px ;height: 30px ;border : 0px; margin-top: 20px;" type="text" placeholder="Address" required >
       <select class="select"name="Country" >
         <option >Select Country</option>
         <option >India</option>
@@ -176,9 +184,9 @@
         <option >Lakhnow</option>
         <option >Bihar</option>
       </select>
-      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px; margin-top: 20px;" type="text" placeholder="Select City" required >
-      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Pincode" required >
-      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px; margin-left: 30px;" type="text" placeholder="Contact Number" required >
+      <input style="padding: 5px 0px ;padding-left: 10px; width:315px ;height: 30px ;border : 0px; margin-top: 20px;" type="text" placeholder="Select City" required >
+      <input style="padding: 5px 0px ;padding-left: 10px; width:315px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Pincode" required >
+      <input style="padding: 5px 0px ;padding-left: 10px; width:315px ;height: 30px ;border : 0px; margin-left: 30px;" type="text" placeholder="Contact Number" required >
       <h3 style="margin: 10px 0px;">Enquiry Details</h3>
       <select class="select2"name="Enquiry" >
         <option >Type Enquiry</option>
@@ -186,16 +194,16 @@
         <option >Employ</option>
         <option >Personal</option>
       </select>
-      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Enquiry Details" required >
-      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px; margin-left: 30px;" type="date" placeholder="Date" required >
+      <input style="padding: 5px 0px ;padding-left: 10px; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Enquiry Details" required >
+      <input style="padding: 5px 0px ;padding-left: 10px; width:320px ;height: 30px ;border : 0px; margin-left: 30px;" type="date" placeholder="Enter date" required >
       <select class="select3"name="Enquiry" >
         <option >Enquiry Status</option>
         <option >Company</option>
         <option >Employ</option>
         <option >Personal</option>
       </select>
-      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Phone Number" required >
-      <input style="padding: 5px 0px ; width:320px ;height: 30px ;border : 0px; margin-left: 30px;" type="text" placeholder="Enquiry Status" required >
+      <input style="padding: 5px 0px ;padding-left: 10px; width:320px ;height: 30px ;border : 0px;margin-left: 30px;" type="text" placeholder="Phone Number" required >
+      <input style="padding: 5px 0px ;padding-left: 10px; width:320px ;height: 30px ;border : 0px; margin-left: 30px;" type="text" placeholder="Enquiry Status" required >
      
       <button class="btn1">Add New Client</button>
       <button class="btn2">Cancel</button>
