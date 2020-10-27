@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+         *
+  {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+    .col1
+    {
+        font-size: 14px;
+        padding-top: 10px;
+        width: 180px;
+        position: fixed;
+        background-color: white;
+        box-shadow: 1px 1px 2px gray;
+        height: 100%;
+    }
+    .col1 p{
+      padding: 10px 5px;
+    }
+    .col1 a{
+        text-decoration: none;
+        color: #818181;
+    }
+    .col1 a:hover
+    {
+      color: rgb(14, 12, 12);
+    }
+    .col1 i
+    {
+      padding: 10px;
+      font-size: 20px;
+    }
+    .row
+    {
+        padding: 15px ;
+        margin-left: 200px;
+        margin-top: 0px;
+        font-size: 25px;
+        
+    }
+
+    .row1
+    {
+      padding-top: 10px;
+      margin-left: 180px;
+      padding-bottom: 45px;
+      background-color:#f5fafa;
+      padding-left: 30px;
+    }
+    .row1 a
+    {
+     text-decoration: none;
+    }
+    h1{
+     color: blue;
+    }
+    .select
+    {
+      padding-left: 10px;
+     
+      width:320px ;
+      height: 45px ;
+      margin-left: 35px;
+      border : 0px;
+    }
+    .select2
+    {
+      padding-left: 10px;
+     
+      width:320px ;
+      height: 45px ;
+      border : 0px;
+    }
+    .select3
+    {
+      padding-left: 10px; width:305px ;
+      margin-top: 20px;
+      width:320px ;
+      height: 45px ;
+      border : 0px;
+    }
+    .btn1
+    {
+      border: 0px;
+      color:white;
+      background-color: rgb(68, 116, 219);
+      margin-top: 20px;
+      margin-left: 130px;
+      padding: 10px 90px ;
+      border-radius: 4px;
+    }
+    .btn2
+    {
+      border: 0px;
+      color:white;
+      background-color: rgb(245, 41, 14);
+      margin-left: 140px;
+      margin-top: 20px;
+      padding: 10px 100px ;
+      border-radius: 4px;
+    }
+    .header
+    {
+      font-size: 20px;
+      margin-left: 820px;
+    }
+    .headericon
+    {
+      vertical-align: middle;
+      margin-left: 20px;
+      width: 40px;
+      height: 30px;
+    }
+    .headertext
+    {
+      font-size: 20px;
+    }
+    .viewclient
+    {
+    
+      padding: 11px 18px;
+      margin-left: 950px;
+      background-color: #eafae3;
+      border: 1px solid rgb(96, 243, 96);
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .logout
+    {
+      padding: 10px 50px 10px 10px;
+      background-color:#f5fafa ;
+      margin-top: 150px;
+    }
+    .extra
+    {
+      padding: 0px ;
+      background-color:#f5fafa;
+      border-left: 4px solid blue;
+      margin-right: 0px ;
+    }
+
+        @media only screen and (max-width: 360px)
+        {
+            *
+             {
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 0;
+                margin: 0;
+              }
+            .col1
+            {
+                font-size: 8px;
+                padding-top: 10px;
+                width: 80px;
+                position: fixed;
+                background-color: white;
+                box-shadow: 1px 1px 2px gray;
+                height: 640px;
+             }
+            .col1 p{
+                padding: 5px 3px;
+             }
+            .col1 a{
+                text-decoration: none;
+                color: #818181;
+             }
+            .col1 a:hover
+             {
+                color: rgb(14, 12, 12);
+             }
+            .col1 i
+             {
+                padding: 3px;
+                font-size: 10px;
+             }
+             .row
+             {
+                padding:5px ;
+                margin-left:85px;
+                margin-top: 0px;
+                font-size: 12px;
+        
+             }
+             .logout
+             {
+                padding: 10px 50px 10px 10px;
+                background-color:#f5fafa ;
+                margin-top: 415px;
+             }
+   
+             .header
+             {
+                font-size: 10px;
+                margin-left: 130px;
+             }
+             .headertext
+             {
+                font-size: 10px;
+             }
+             .img1
+             {
+                margin-left: 10px ;
+                width:50px ;
+                height:30px ;
+             }
+             .icon1
+             {
+                font-size: 10px;
+                margin-left:5px;
+             }
+             .headericon
+             {
+                vertical-align: middle;
+                margin-left: 5px;
+                width: 15px;
+                height: 15px;
+             }
+    
+             .row1
+             {
+                padding-top: 5px;
+                margin-left: 85px;
+                padding-bottom: 15px;
+                background-color:#f5fafa;
+                padding-left:10px;
+                height: 640px;
+             }
+             .textsize
+             {
+                font-size: 8px;
+             }
+             .row1 a
+             {
+                text-decoration: none;
+              }
+              .viewclient
+             {
+                font-size: 8px;
+                padding: 2px 4px;
+                margin-left: 110px;
+                background-color: #eafae3;
+                border: 1px solid rgb(96, 243, 96);
+                border-radius: 1px;
+                font-weight: bold;
+             }
+             .inputbox
+             {
+                box-shadow: 1px 1px 2px gray ;
+                padding: 5px 0px;
+                padding-left: 2px; 
+                width:110px ;
+                height: 6px ;
+                border : 0px;
+                font-size:10px;
+                margin-top: 10px;
+             }
+             .select
+             {
+                box-shadow:  1px 1px 2px gray ;
+                padding: 2px 0px;
+                padding-left: 2px;   
+                width:112px ;
+                font-size: 10px;
+                height:15px ;
+                margin-top: 10px;
+                border : 0px;
+             }
+             .select2
+             {
+                box-shadow:  1px 1px 2px gray ;
+                font-size: 10px;
+                padding: 2px 0px;
+                padding-left: 2px;     
+                width:112px ;
+                height: 15px ;
+                border : 0px;
+             }
+             .select3
+             {
+                box-shadow:  1px 1px 2px gray ;
+                font-size: 10px;
+                padding: 2px 0px;
+                padding-left: 2px;   
+                width:112px ;
+                margin-top: 10px;
+                height: 15px ;
+                border : 0px;
+             }
+             .btn1
+             {
+                box-shadow:  1px 1px 2px gray ;
+                border: 0px;
+                color:white;
+                background-color: rgb(68, 116, 219);
+                margin-top: 60px;
+                margin-left: 10px;
+                padding: 1px 9px ;
+                border-radius: 2px;
+             }
+             .btn2
+             {
+               box-shadow:  1px 1px 2px gray ;
+               border: 0px;
+               color:white;
+               background-color: rgb(245, 41, 14);
+               margin-left: 30px;
+               margin-top: 60px;
+               padding: 1px 9px ;
+               border-radius: 2px;
+             }
+         }
+         @media only screen and (max-width: 411px)
+        {
+            *
+             {
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 0;
+                margin: 0;
+              }
+              .col1
+            {
+                font-size: 8px;
+                padding-top: 10px;
+                width: 80px;
+                position: fixed;
+                background-color: white;
+                box-shadow: 1px 1px 2px gray;
+                height: 100%;
+             }
+            .col1 p{
+                padding: 5px 3px;
+             }
+            .col1 a{
+                text-decoration: none;
+                color: #818181;
+             }
+            .col1 a:hover
+             {
+                color: rgb(14, 12, 12);
+             }
+            .col1 i
+             {
+                padding: 3px;
+                font-size: 10px;
+             }
+             .row
+             {
+                padding:5px ;
+                margin-left:85px;
+                margin-top: 0px;
+                font-size: 12px;
+        
+             }
+             .logout
+             {
+                padding: 10px 50px 10px 10px;
+                background-color:#f5fafa ;
+                margin-top: 444px;
+             }
+   
+             .header
+             {
+                font-size: 10px;
+                margin-left: 130px;
+             }
+             .headertext
+             {
+                font-size: 10px;
+             }
+             .img1
+             {
+                margin-left: 10px ;
+                width:50px ;
+                height:30px ;
+             }
+             .icon1
+             {
+                font-size: 10px;
+                margin-left:5px;
+             }
+             .headericon
+             {
+                vertical-align: middle;
+                margin-left: 5px;
+                width: 15px;
+                height: 15px;
+             }
+    
+             .row1
+             {
+                padding-top: 5px;
+                margin-left: 85px;
+                padding-bottom: 15px;
+                background-color:#f5fafa;
+                padding-left:10px;
+                height: 640px;
+             }
+             .textsize
+             {
+                font-size: 8px;
+             }
+             .row1 a
+             {
+                text-decoration: none;
+              }
+              .viewclient
+             {
+                font-size: 8px;
+                padding: 2px 4px;
+                margin-left: 110px;
+                background-color: #eafae3;
+                border: 1px solid rgb(96, 243, 96);
+                border-radius: 1px;
+                font-weight: bold;
+             }
+             .inputbox
+             {
+                box-shadow: 1px 1px 2px gray ;
+                padding: 5px 0px;
+                padding-left: 2px; 
+                width:110px ;
+                height: 6px ;
+                border : 0px;
+                font-size:10px;
+                margin-top: 10px;
+             }
+             .select
+             {
+                box-shadow:  1px 1px 2px gray ;
+                padding: 2px 0px;
+                padding-left: 2px;   
+                width:112px ;
+                font-size: 10px;
+                height:15px ;
+                margin-top: 10px;
+                border : 0px;
+             }
+             .select2
+             {
+                box-shadow:  1px 1px 2px gray ;
+                font-size: 10px;
+                padding: 2px 0px;
+                padding-left: 2px;     
+                width:112px ;
+                height: 15px ;
+                border : 0px;
+             }
+             .select3
+             {
+                box-shadow:  1px 1px 2px gray ;
+                font-size: 10px;
+                padding: 2px 0px;
+                padding-left: 2px;   
+                width:112px ;
+                margin-top: 10px;
+                height: 15px ;
+                border : 0px;
+             }
+             .btn1
+             {
+                box-shadow:  1px 1px 2px gray ;
+                border: 0px;
+                color:white;
+                background-color: rgb(68, 116, 219);
+                margin-top: 60px;
+                margin-left: 10px;
+                padding: 1px 9px ;
+                border-radius: 2px;
+             }
+             .btn2
+             {
+               box-shadow:  1px 1px 2px gray ;
+               border: 0px;
+               color:white;
+               background-color: rgb(245, 41, 14);
+               margin-left: 30px;
+               margin-top: 60px;
+               padding: 1px 9px ;
+               border-radius: 2px;
+             }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="col1">
+        <img  src="full.jpg"  class="img1">
+        <p><a href="#dashboard"><i class="fa fa-university" aria-hidden="true"></i> Dashboard</a></p>
+        <p class="extra"><a href="#Client"><i class="fa fa-users" aria-hidden="true"></i> Client Details </a></p>
+        <p ><a href="Enquiry"><i class="fa fa-id-card-o" aria-hidden="true"></i> Enquiry</a></p>
+        <p><a href="Calendar"><i class="fa fa-calendar" aria-hidden="true"></i> Work Calendar</a></p>
+        <p><a href="Notification"><i class="fa fa-bell-o" aria-hidden="true"></i> Notification</a></p>
+        <p><a href="Profile"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></p>
+        <p class="logout"><i class="fa fa-sign-out" ></i><span>Logout</span></p>
+      </div> 
+      <div class="row">
+        <a href="#menu"><i class="fa fa-bars"  aria-hidden="true"></i></a>
+        <a class="header" herf="#bell"><i class="fa fa-bell-o" aria-hidden="true"></i> </a><span class="headertext">Welcome Back</span><span><img class="headericon"src="person.png"></span><span class="icon1"><i  class="fa fa-chevron-down" aria-hidden="true"  ></i></span>
+     </div> 
+     <div class="row1">
+        <h6>Add New Client <button class="viewclient">View Client <i  class="fa fa-eye" aria-hidden="true"></i></button></h6>
+        <p class="textsize" style="margin-top:10px;">Marketing & Sales</p>
+        <p class="textsize" style="padding-top: 5px;">Home <span><a href="">< Add New Client </a></span></p>
+        <h6 style="padding-top: 5px; ">Personal Information</h6>
+        <input class="inputbox" type="text" placeholder="Client Name" required >
+        <input class="inputbox"  type="text" placeholder="Phone Number" required >
+        <input class="inputbox"  type="text" placeholder="Client Name" required >
+        <input class="inputbox"  type="text" placeholder="Address" required >
+        <select class="select"name="Country" >
+            <option >Select Country</option>
+            <option >India</option>
+            <option >USA</option>
+            <option >Pakistan</option>
+          </select>
+          <select class="select"name="State" >
+            <option >Select State</option>
+            <option >Uttar Pradesh</option>
+            <option >Lakhnow</option>
+            <option >Bihar</option>
+          </select> 
+          <input class="inputbox" type="text" placeholder="Select City" required >
+          <input class="inputbox" type="text" placeholder="Pincode" required >
+          <input class="inputbox" type="text" placeholder="Contact Number" required >
+          <h6 style="margin: 10px 0px;">Enquiry Details</h6>
+          <select class="select2"name="Enquiry" >
+            <option >Type Enquiry</option>
+            <option >Company</option>
+            <option >Employ</option>
+            <option >Personal</option>
+          </select>
+          <input class="inputbox" type="text" placeholder="Enquiry Details" required >
+          <input class="inputbox" type="date" placeholder="Enter date" required >
+          <select class="select3"name="Enquiry" >
+            <option >Enquiry Status</option>
+            <option >Company</option>
+            <option >Employ</option>
+            <option >Personal</option>
+          </select>
+          <input class="inputbox" type="text" placeholder="Phone Number" required >
+          <input class="inputbox" type="text" placeholder="Enquiry Status" required >
+          <button class="btn1">Add New Client</button>
+          <button class="btn2">Cancel</button>
+     </div>
+</body>
+</html>
